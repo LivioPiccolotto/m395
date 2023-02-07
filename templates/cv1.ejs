@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lebenslauf</title>
+  </head>
+  <body>
+
+      <header><h1>Lebenslauf von <%= userinfo.firstName %></a> </h1></header>
+
+      <main>
+
+        <div class="daten">
+          <ul id="list">
+            <li>Vorname: <%= cvinfo.vorname %> i</li>
+            <li>Nachname: <%= cvinfo.nachname %> i</li>
+            <li>Alter: <%= alter %> i</li>
+            <li>Beruf: <%= beruf %> i</li>
+            <li>Hobbys: <%= hobbys %> i</li>
+            <li>Stärken: <%= staerken %> i</li>
+            <li>Ausbildung: <%= ausbildung %> i</li>
+            
+
+          </ul>
+        </div>
+
+
+      </main>
+
+      <style>
+        body{
+          background-color: red;
+          color: white;
+          
+        }
+        #list{
+          list-style: none;
+        }
+      </style>
+    
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eingabeaufforderung</title>
+  <script>
+    function loadText() {
+      var inputText = document.getElementById("inputText").value;
+      document.getElementById("template").innerHTML = inputText;
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="inputText" />
+  <button onclick="loadText()">Lade Text</button>
+  <div id="template">
+  </div>
+</body>
+</html>
